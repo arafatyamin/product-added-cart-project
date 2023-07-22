@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My eCommerce Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/9319c889d7.js" crossorigin="anonymous"></script>
+  <style>
+    .success, .error {
+        color: white;
+        padding: 5px;
+        margin: 5px 0 15px 0;
+    }
+
+    .success {
+        background: green;
+    }
+
+    .warning {
+      background: yellowgreen;
+    }
+
+    .error {
+        background: red;
+    }
+</style>
+</head>
+<body>
+
+  <header class="shadow-lg text-[black] p-[20px] mb-[26px]">
+    <h1>My eCommerce Website</h1>
+  </header>
+
+  <main class="flex flex-col-reverse md:flex-row pl-[20px] justify-between">
+    <section id="product-list" class="md:w-[70%] grid grid-cols-2 lg:grid-cols-3 gap-1">
+      <!-- Product cards will be dynamically generated here -->
+    </section>
+    <section id="shopping-cart" class="w-[370px] bg-[#f4f4f4]">
+      <div class="showAlert">
+        
+      </div>
+      <h2>Shopping Cart</h2>
+      <ul id="cart-items">
+        <!-- Cart items will be dynamically generated here -->
+      </ul>
+      
+      <p class="font-bold text-[18px]" id="cart-total"></p>
+
+      <button class="bg-[#333] text-[#fff] py-[10px] px-[20px] cursor-pointer mt-[10px] w-full text-[16px]" id="checkout-btn">Checkout</button>
+    </section>
+    
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
+
